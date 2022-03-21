@@ -1,6 +1,3 @@
-Original App Design Project - README Template
-===
-
 # ESP32IoTController
 
 ## Table of Contents
