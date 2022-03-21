@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-(Senior Design II project) An Android mobile app that enables user to monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse.
+(Senior Design II project) An Android-native mobile app that enables user to monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
