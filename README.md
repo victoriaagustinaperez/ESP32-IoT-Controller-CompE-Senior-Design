@@ -26,6 +26,7 @@
 **Required Must-have Stories**
 
 * [fill in your required user stories here]
+  
   [] Sensor values update regularly.
   
   [] Actuator controls are responsive within the app.
@@ -37,6 +38,7 @@
 **Optional Nice-to-have Stories**
 
 * [fill in your required user stories here]
+  
   [] App sends notifications to user of latest updates. (ie. "The water tank is empty - please refill!")
 * ...
 
@@ -66,7 +68,44 @@
 ## Schema
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+| Property              | Type          | Description   |
+| --------------------- | ------------- | ------------- | 
+| VerticalArrangement1  | Content Cell  | Content Cell  |
+| Label 1               | Content Cell  | Content Cell  |
+| SENSORS               | Content Cell  | Content Cell  |
+| TableArrangement1     | Content Cell  | Content Cell  |
+| Label2                | Content Cell  | Content Cell  |
+| Label3                | Content Cell  | Content Cell  |
+| Moist_Sens            | Content Cell  | Content Cell  |
+| Label6                | Content Cell  | Content Cell  |
+| Light_Sens            | Content Cell  | Content Cell  |
+| Label13               | Content Cell  | Content Cell  |
+| pH_Sens               | Content Cell  | Content Cell  |
+| SPACE                 | Content Cell  | Content Cell  |
+| ACTUATORS             | Content Cell  | Content Cell  |
+| SPACE1                | Content Cell  | Content Cell  |
+| TableArrangement2     | Content Cell  | Content Cell  |
+| Label8                | Content Cell  | Content Cell  |
+| Slider1               | Content Cell  | Content Cell  |
+| Temp_Ctrl             | Content Cell  | Content Cell  |
+| Label9                | Content Cell  | Content Cell  |
+| Slider2               | Content Cell  | Content Cell  |
+| Moist_Ctrl            | Content Cell  | Content Cell  |
+| Label10               | Content Cell  | Content Cell  |
+| Light_Ctrl            | Content Cell  | Content Cell  |
+| Light_Sens1           | Content Cell  | Content Cell  |
+| Label11               | Content Cell  | Content Cell  |
+| Label12               | Content Cell  | Content Cell  |
+| ALERTS                | Content Cell  | Content Cell  |
+| Alert_Sens            | Content Cell  | Content Cell  |
+| Status_Chnl           | Content Cell  | Content Cell  |
+| Temp_Ctrl_Chnl        | Content Cell  | Content Cell  |
+| Moist_Ctrl_Chnl       | Content Cell  | Content Cell  |
+| Light_Ctrl_Chnl       | Content Cell  | Content Cell  |
+| Clock1                | Content Cell  | Content Cell  |
+| Clock2                | Content Cell  | Content Cell  |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
