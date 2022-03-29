@@ -27,8 +27,11 @@
 
 * [fill in your required user stories here]
   [] Sensor values update regularly.
+  
   [] Actuator controls are responsive within the app.
+  
   [] Actuator controls provoke a response within the IoT device.
+  
 * ...
 
 **Optional Nice-to-have Stories**
