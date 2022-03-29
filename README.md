@@ -61,7 +61,8 @@
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 ### [BONUS] Digital Wireframes & Mockups
-<img src="https://imgur.com/a/s4ZkArf" width=600>
+<!-- <img src="https://imgur.com/a/s4ZkArf" width=600> -->
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/jQwanUP" data-context="false" ><a href="//imgur.com/a/jQwanUP"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ### [BONUS] Interactive Prototype
 
