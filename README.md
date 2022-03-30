@@ -74,42 +74,64 @@
 
 | Property              | Type          | Description   |
 | --------------------- | ------------- | ------------- | 
-| VerticalArrangement1  | Content Cell  | Content Cell  |
-| Label 1               | Content Cell  | Content Cell  |
-| SENSORS               | Content Cell  | Content Cell  |
-| TableArrangement1     | Content Cell  | Content Cell  |
-| Label2                | Content Cell  | Content Cell  |
-| Label3                | Content Cell  | Content Cell  |
-| Moist_Sens            | Content Cell  | Content Cell  |
-| Label6                | Content Cell  | Content Cell  |
-| Light_Sens            | Content Cell  | Content Cell  |
-| Label13               | Content Cell  | Content Cell  |
-| pH_Sens               | Content Cell  | Content Cell  |
-| SPACE                 | Content Cell  | Content Cell  |
-| ACTUATORS             | Content Cell  | Content Cell  |
-| SPACE1                | Content Cell  | Content Cell  |
-| TableArrangement2     | Content Cell  | Content Cell  |
-| Label8                | Content Cell  | Content Cell  |
-| Slider1               | Content Cell  | Content Cell  |
-| Temp_Ctrl             | Content Cell  | Content Cell  |
-| Label9                | Content Cell  | Content Cell  |
-| Slider2               | Content Cell  | Content Cell  |
-| Moist_Ctrl            | Content Cell  | Content Cell  |
-| Label10               | Content Cell  | Content Cell  |
-| Light_Ctrl            | Content Cell  | Content Cell  |
-| Light_Sens1           | Content Cell  | Content Cell  |
-| Label11               | Content Cell  | Content Cell  |
-| Label12               | Content Cell  | Content Cell  |
-| ALERTS                | Content Cell  | Content Cell  |
-| Alert_Sens            | Content Cell  | Content Cell  |
-| Status_Chnl           | Content Cell  | Content Cell  |
-| Temp_Ctrl_Chnl        | Content Cell  | Content Cell  |
-| Moist_Ctrl_Chnl       | Content Cell  | Content Cell  |
-| Light_Ctrl_Chnl       | Content Cell  | Content Cell  |
-| Clock1                | Content Cell  | Content Cell  |
-| Clock2                | Content Cell  | Content Cell  |
+| Moist_Sens            | Number        | real-time moisture sensor reading  |
+| Temp_Sens             | Number        | real-time thermometer sensor reading  |
+| Light_Sens            | Binary        | real-time grow light actuator ON/OFF reading  |
+| pH_Sens               | Number        | real-time pH sensor reading  |
+| Slider1               | Number        | UI slider for fan control  |
+| Temp_Ctrl             | Number        | returns slider value for fan control  |
+| Slider2               | Number        | UI slider for water pump control   |
+| Moist_Ctrl            | Number        | returns slider value for water pump control  |
+| Light_Ctrl            | Binary        | ON/OFF grow light control switch  |
+| Light_Sens1           | Number        | set slider value for grow light control  |
+| Alert_Sens            | String        | returns latest notification  |
+| Status_Chnl           | Server Component  | provides functions for HTTP GET, POST, PUT and DELETE requests  |
+| Temp_Ctrl_Chnl        | Server Component  | provides functions for HTTP GET, POST, PUT and DELETE requests  |
+| Moist_Ctrl_Chnl       | Server Component  | provides functions for HTTP GET, POST, PUT and DELETE requests  |
+| Light_Ctrl_Chnl       | Server Component  | provides functions for HTTP GET, POST, PUT and DELETE requests  |
+| Clock1                | Number        | reads microcontroller every 2 seconds  |
 
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+/********* Control actuators *************/
+void takeActions(void)
+{
+  Serial.print("Pump: ");
+  Serial.println(pump);
+  Serial.print("Lamp: ");
+  Serial.println(lamp);
+  if (pump == 1) digitalWrite(ACTUATOR1, LOW);
+  else digitalWrite(ACTUATOR1, HIGH);
+  if (lamp == 1) digitalWrite(ACTUATOR2, LOW);
+  else digitalWrite(ACTUATOR2, HIGH);
+}
+/********* Read actuators *************/
+int readThingSpeak(String channelID)
+{
+  startThingSpeakCmd();
+  int command;
+
+  String getStr = "GET /channels/";
+  getStr += channelID;
+  getStr +="/fields/1/last";
+  getStr += "\r\n";
+  String messageDown = sendThingSpeakGetCmd(getStr);
+  if (messageDown[5] == 49)
+  {
+    command = messageDown[7]-48; 
+    Serial.print("Command received: ");
+    Serial.println(command);
+  }
+  else command = 9;
+  return command;
+}
+
+Write to actuators via API calls example:
+Turn on actuator 1:
+https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=1
+
+Turn off actuator 1:
+https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=0
