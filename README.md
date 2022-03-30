@@ -96,6 +96,7 @@
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
+
 /********* Control actuators *************/
 void takeActions(void)
 {
@@ -108,6 +109,8 @@ void takeActions(void)
   if (lamp == 1) digitalWrite(ACTUATOR2, LOW);
   else digitalWrite(ACTUATOR2, HIGH);
 }
+
+
 /********* Read actuators *************/
 int readThingSpeak(String channelID)
 {
@@ -130,8 +133,11 @@ int readThingSpeak(String channelID)
 }
 
 Write to actuators via API calls example:
+
 Turn on actuator 1:
+
 https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=1
 
 Turn off actuator 1:
+
 https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=0
