@@ -66,6 +66,8 @@
 
 * Welcome Screen -> Hub Screen
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/wD2jTkr"  ><a href="//imgur.com/a/wD2jTkr">View gif of "Sprint 1" on imgur.com</a></blockquote>
+
 ## Wireframes
 ### [BONUS] Digital Wireframes & Mockups
 
