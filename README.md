@@ -67,13 +67,11 @@
 * Welcome Screen -> Hub Screen
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ### [BONUS] Digital Wireframes & Mockups
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/PaLUPbl"  ><a href="//imgur.com/a/PaLUPbl">View image of "Welcome Screen" on imgur.com</a></blockquote>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="M3KK1OO"><a href="https://imgur.com/M3KK1OO">View image of "Hub Screen" on imgur.com</a></blockquote>
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/nso7flc"  ><a href="//imgur.com/a/nso7flc">View image of "Hub Screen" on imgur.com</a></blockquote>
 
 ### [BONUS] Interactive Prototype
 
