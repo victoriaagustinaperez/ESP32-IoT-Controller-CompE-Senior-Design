@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "SmartGreenhouse"
+rootProject.name = "ESP32IoTController"
 include ':app'

@@ -71,7 +71,7 @@
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/PaLUPbl"  ><a href="//imgur.com/a/PaLUPbl">View image of "Welcome Screen" on imgur.com</a></blockquote>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/nso7flc"  ><a href="//imgur.com/a/nso7flc">View image of "Hub Screen" on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/85Ql7HY"  ><a href="//imgur.com/a/85Ql7HY">HView image of "Hub Screen" on imgur.com</a></blockquote>
 
 ### [BONUS] Interactive Prototype
 

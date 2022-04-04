@@ -1,4 +1,4 @@
-package com.example.smartgreenhouse;
+package com.example.esp32iotcontroller;
 
 import org.junit.Test;
 
