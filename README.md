@@ -27,11 +27,17 @@
 
 * [fill in your required user stories here]
   
-  [] Sensor values update regularly.
+  [x] Sensor status section layout
   
-  [] Actuator controls are responsive within the app.
+  [x] Actuator controls section layout
+
+  [x] Recent alerts/notifications section layout
+
+  [] Sensor values update from IoT device regularly (uplink).
   
-  [] Actuator controls provoke a response within the IoT device.
+  [] Actuator controls are responsive within the app (downlink).
+  
+  [] Actuator controls provoke a response within the IoT device (downlink).
   
 * ...
 
@@ -44,8 +50,10 @@
 
 ### 2. Screen Archetypes
 
+* Welcome Screen
+  * Welcome logo, "Enter" button to take user to Hub Screen
 * Hub Screen
-    * Welcome message, sensor activity, actuator slidebars, a binary switch, and (optional) last text notification.
+    * Welcome message, sensor activity, actuator control inputs, a binary switch, and (optional) last text notification.
       * ...
 
 ### 3. Navigation
@@ -56,20 +64,20 @@
 
 **Flow Navigation** (Screen to Screen)
 
-* n/a
+* Welcome Screen -> Hub Screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 ### [BONUS] Digital Wireframes & Mockups
 
-"<blockquote class="imgur-embed-pub" lang="en" data-id="M3KK1OO"><a href="https://imgur.com/M3KK1OO">View post on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/PaLUPbl"  ><a href="//imgur.com/a/PaLUPbl">View image of "Welcome Screen" on imgur.com</a></blockquote>
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="M3KK1OO"><a href="https://imgur.com/M3KK1OO">View image of "Hub Screen" on imgur.com</a></blockquote>
 
 
 ### [BONUS] Interactive Prototype
 
 ## Schema
-[This section will be completed in Unit 9]
 ### Models
 
 | Property              | Type          | Description   |
@@ -78,9 +86,9 @@
 | Temp_Sens             | Number        | real-time thermometer sensor reading  |
 | Light_Sens            | Binary        | real-time grow light actuator ON/OFF reading  |
 | pH_Sens               | Number        | real-time pH sensor reading  |
-| Slider1               | Number        | UI slider for fan control  |
+| Slider1               | Number        | entry text-box for fan control  |
 | Temp_Ctrl             | Number        | returns slider value for fan control  |
-| Slider2               | Number        | UI slider for water pump control   |
+| Slider2               | Number        | entry text-box for water pump control   |
 | Moist_Ctrl            | Number        | returns slider value for water pump control  |
 | Light_Ctrl            | Binary        | ON/OFF grow light control switch  |
 | Light_Sens1           | Number        | set slider value for grow light control  |
@@ -92,10 +100,6 @@
 | Clock1                | Number        | reads microcontroller every 2 seconds  |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
-
 
 /********* Control actuators *************/
 void takeActions(void)
