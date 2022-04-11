@@ -35,7 +35,7 @@
 
   [] Sensor values update from IoT device regularly (uplink).
   
-  [] Actuator controls are responsive within the app (downlink).
+  [x] Actuator controls are responsive within the app (downlink).
   
   [] Actuator controls provoke a response within the IoT device (downlink).
   
@@ -43,7 +43,7 @@
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
+* [fill in your nice-to-have user stories here]
   
   [] App sends notifications to user of latest updates. (ie. "The water tank is empty - please refill!")
 * ...
@@ -66,7 +66,7 @@
 
 * Welcome Screen -> Hub Screen
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/wD2jTkr"  ><a href="//imgur.com/a/wD2jTkr">View gif of "Sprint 1" on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/pUuRq9o"  ><a href="//imgur.com/a/pUuRq9o">View gif of "Sprint 2" on imgur.com</a></blockquote>
 
 ## Wireframes
 ### [BONUS] Digital Wireframes & Mockups
