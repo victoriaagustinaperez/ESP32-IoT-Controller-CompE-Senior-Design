@@ -8,13 +8,13 @@
 
 ## Overview
 ### Description
-(Senior Design II project) An Android-native mobile app that enables user to monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse.
+(Senior Design II project) An Android-native mobile app that enables user to monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse via Ubidots integration.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** IoT
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer. Functionality wouldn't be limited to mobile devices.
-- **Story:** Monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse over the MQTT communication protocol.
+- **Story:** Monitor the sensors (temperature, pH, moisture) and control the actuators (grow lights, fans, water pump) of an ESP32 LoRaWAN-enabled semi-autonomous greenhouse over the HTTP communication protocol.
 - **Market:** Any individual could choose to use this app to control their smart greenhouse.
 - **Habit:** This app could be used as often or unoften as the user wanted to monitor and/or control their greenhouses' conditions.
 - **Scope:** Instructions on how to download the app and pair it to a smart greenhouse would come include with any unit sold.
@@ -136,12 +136,8 @@ int readThingSpeak(String channelID)
   return command;
 }
 
-Write to actuators via API calls example:
+Write to command channels via API calls example:
 
-Turn on actuator 1:
+Send command to device:
 
-https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=1
-
-Turn off actuator 1:
-
-https://api.thingspeak.com/update?api_key=ACT1_WRITE_KEY&field1=0
+http://industrial.api.ubidots.com/api/v1.6/devices/f3f155e8-3eec-439f-b44f-b1e6aa307547/
