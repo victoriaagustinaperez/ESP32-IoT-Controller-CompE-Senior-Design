@@ -1,4 +1,4 @@
-package com.example.esp32iotcontroller;
+package com.example.myapplication;
 
 import org.junit.Test;
 
