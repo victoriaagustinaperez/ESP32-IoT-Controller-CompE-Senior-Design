@@ -33,11 +33,11 @@
 
   [x] Recent alerts/notifications section layout
 
-  [] Sensor values update from IoT device regularly (uplink).
+  [x] Sensor values update from IoT device regularly (uplink).
   
   [x] Actuator controls are responsive within the app (downlink).
   
-  [] Actuator controls provoke a response within the IoT device (downlink).
+  [x] Actuator controls provoke a response within the IoT device (downlink).
   
 * ...
 
@@ -45,7 +45,7 @@
 
 * [fill in your nice-to-have user stories here]
   
-  [] App sends notifications to user of latest updates. (ie. "The water tank is empty - please refill!")
+  [x] App sends notifications to user of latest updates. (ie. "The water tank is empty - please refill!")
 * ...
 
 ### 2. Screen Archetypes
