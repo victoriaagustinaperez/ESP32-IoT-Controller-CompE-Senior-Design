@@ -66,7 +66,7 @@
 
 * Welcome Screen -> Hub Screen
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/pUuRq9o"  ><a href="https://drive.google.com/file/d/1ivqg-feualirnxYj_twC-Wb3O1FS0BlM/view?usp=sharing">View gif of "Sprint 3" on google drive</a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/pUuRq9o"  ><a href="https://submissions.us-east-1.linodeobjects.com/android_university/xlJZ_Dic.gif">View gif of "Sprint 4"</a></blockquote>
 
 ## Wireframes
 ### [BONUS] Digital Wireframes & Mockups
