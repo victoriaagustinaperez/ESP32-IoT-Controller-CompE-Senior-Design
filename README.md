@@ -100,44 +100,4 @@
 | Clock1                | Number        | reads microcontroller every 2 seconds  |
 
 ### Networking
-
-/********* Control actuators *************/
-void takeActions(void)
-{
-  Serial.print("Pump: ");
-  Serial.println(pump);
-  Serial.print("Lamp: ");
-  Serial.println(lamp);
-  if (pump == 1) digitalWrite(ACTUATOR1, LOW);
-  else digitalWrite(ACTUATOR1, HIGH);
-  if (lamp == 1) digitalWrite(ACTUATOR2, LOW);
-  else digitalWrite(ACTUATOR2, HIGH);
-}
-
-
-/********* Read actuators *************/
-int readThingSpeak(String channelID)
-{
-  startThingSpeakCmd();
-  int command;
-
-  String getStr = "GET /channels/";
-  getStr += channelID;
-  getStr +="/fields/1/last";
-  getStr += "\r\n";
-  String messageDown = sendThingSpeakGetCmd(getStr);
-  if (messageDown[5] == 49)
-  {
-    command = messageDown[7]-48; 
-    Serial.print("Command received: ");
-    Serial.println(command);
-  }
-  else command = 9;
-  return command;
-}
-
-Write to command channels via API calls example:
-
-Send command to device:
-
 http://industrial.api.ubidots.com/api/v1.6/devices/f3f155e8-3eec-439f-b44f-b1e6aa307547/
